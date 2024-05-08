@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { Auth0Provider } from "@auth0/auth0-react";
 import { UserProvider } from "./context/user_context";
+import { FilterProvider } from "./context/filter_context";
+import { ProductsProvider } from "./context/products_context.jsx";
 
 import App from "./App.jsx";
 import "./index.css";
@@ -16,7 +18,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       }}
     >
       <UserProvider>
-        <App />
+        <ProductsProvider>
+          <FilterProvider>
+            <App />
+          </FilterProvider>
+        </ProductsProvider>
       </UserProvider>
     </Auth0Provider>
   </React.StrictMode>

@@ -12,6 +12,7 @@ import Section4 from "./Section4";
 import Contacts from "./Contacts";
 import Faq from "./Faq";
 import SectionTwoBicycle from "./SectionTwoBicycle";
+import BookNow from "./BookNow";
 
 export {
   Loading,
@@ -28,4 +29,5 @@ export {
   Contacts,
   Faq,
   SectionTwoBicycle,
+  BookNow,
 };

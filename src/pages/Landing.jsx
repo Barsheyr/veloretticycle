@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Footer, Loading } from "../components";
+import { Header, Footer, Loading, BookNow } from "../components";
 import { Outlet, useNavigation } from "react-router-dom";
 
 const Landing = () => {
@@ -8,6 +8,7 @@ const Landing = () => {
       <Header />
       {/* <Loading /> */}
       <Outlet />
+      <BookNow />
       <Footer />
     </>
   );
